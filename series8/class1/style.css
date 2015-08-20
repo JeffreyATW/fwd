@@ -1,0 +1,21 @@
+h1 {
+  color: red;
+  font-size: 10px;
+}
+
+p {
+  color: #0fa560;
+  font-style: italic;
+}
+
+/*
+= rule
+
+h1 = selector
+{} = set of declarations
+color: red; = declaration
+color = property
+red = value
+: = separates property and value
+; = ends the declaration
+*/

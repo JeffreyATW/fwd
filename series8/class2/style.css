@@ -1,0 +1,59 @@
+* {
+  box-sizing: border-box;
+}
+
+section.afterword p.goodbye {
+  text-decoration: underline;
+}
+
+h1 {
+  background: yellow;
+  border: 5px solid black;
+  color: red;
+  height: 200px;
+  margin: 20px;
+  padding: 20px;
+  width: 200px;
+}
+
+section.afterword p {
+  color: blue;
+}
+
+p {
+  color: #0fa560;
+  font-style: italic;
+}
+
+.before-list {
+  font-size: 120%;
+}
+
+.before-list.for-example, .before-list .for-example {
+  font-family: sans-serif;
+}
+
+.first-numbered-list li {
+
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  color: pink;
+  text-decoration: underline;
+}
+
+/*
+= rule
+
+h1 = selector
+{} = set of declarations
+color: red; = declaration
+color = property
+red = value
+: = separates property and value
+; = ends the declaration
+*/

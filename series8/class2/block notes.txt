@@ -1,0 +1,9 @@
+block stretches across the page
+inline only stretches to contain its content
+
+both block and inline have 0 height until something is inside it
+
+you shouldn't apply height, width, padding or margin to inline elements
+
+inline siblings sit next to each other
+block siblings sit on their own line

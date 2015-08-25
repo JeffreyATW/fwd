@@ -1,6 +1,6 @@
 ## Front-end Web Development
 
-# Assignment for Week 7
+# Assignment for Week 4
 
 1.  Create an HTML file. (Start with the HTML file in [Assignment 1](../class1/assignment.md) as a basis. Feel free to skip the CSS creation/linking steps.)
 2.  Create a JS file (a blank file with a `.js` extension).

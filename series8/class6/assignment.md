@@ -1,7 +1,7 @@
 ## Front-end Web Development
 # Assignment for Week 6
 
-1.  Check out this repository and make a copy of the [`series8/class6/assignment` folder](https://github.com/JeffreyATW/fwd/tree/master/series8/class6/assignment).
+1.  Check out this repository (or run `git pull`) and make a copy of the [`series8/class6/assignment` folder](https://github.com/JeffreyATW/fwd/tree/master/series8/class6/assignment).
 2.  Include a `<script>` reference in the HTML file to the latest version of jQuery.
 3.  Create a JS file of your own and include a `<script>` reference to it in the HTML file.
 4.  Add behavior that makes clicking the "Add a new item" `button` create a new item at the end of the `to-do-list`, based off the first existing item. You will want to use these jQuery functions:

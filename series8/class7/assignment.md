@@ -3,7 +3,7 @@
 
 1.  Make a copy of the `series8/class7/assignment` folder from [this repository](https://github.com/JeffreyATW/fwd).
 2.  Download the latest version of jQuery and include a `<script>` reference in the HTML file to it.
-3.  Create a JS file of your own and include a `<script>` reference to it in the HTML file.
+3.  Create a JS file of your own in the newly copied folder and include a `<script>` reference to it in the HTML file.
 4.  In the JS file, add behavior that makes it so the number inside the `button` element increments by 1 when the `click` event occurs on it.
 5.  Furthermore, make the `button` element change its `class` attribute when clicked. If the class is `zero`, change it to `one`. If `one`, then `two`. If `two`, then `three`, and then back to `zero` again.
 
@@ -21,4 +21,4 @@
 
 * * *
 
-[Solution](http://jeffreyatw.github.io/fwd-assignments/series8/class7/solution/)
+[Solution](http://jeffreyatw.github.io/fwd/series8/class7/solution/)

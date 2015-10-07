@@ -7,7 +7,7 @@
 
     ```json
     {"color":"VALUE"}
-    ```a
+    ```
     
     Where `VALUE` is `blue`, `red`, or `green`, depending on the filename.
 3.  Add three `<button>` elements on `index.html.erb`, giving them, respectively, both `class`es and inner text of `"blue"`, `"red"`, and `"green"`.

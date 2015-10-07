@@ -1,5 +1,5 @@
 ## Front-end Web Development
-# Assignment for Week 14
+# Assignment for Week 10
 
 1.  Create a new Middleman app called `colors`.
 2.  Create a folder inside the `colors/source` directory called `data`.

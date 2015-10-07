@@ -4,9 +4,11 @@
 1.  Create a new Middleman app called `colors`.
 2.  Create a folder inside the `colors/source` directory called `data`.
 3.  In the `data` directory, create three files called `blue.json`, `red.json`, and `green.json`. In each file, insert this text:
+
     ```json
     {"color":"VALUE"}
     ```
+    
     Where `VALUE` is `blue`, `red`, or `green`, depending on the filename.
 3.  Add three `<button>` elements on `index.html.erb`, giving them, respectively, both `class`es and inner text of `"blue"`, `"red"`, and `"green"`.
 4.  Put the latest version of jQuery into the `javascripts` directory.
@@ -28,4 +30,4 @@
 
 * * *
 
-[Solution](assignment)
+[Solution](http://jeffreyatw.github.io/fwd/series8/class10/solution/colors/build/)

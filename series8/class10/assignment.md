@@ -7,14 +7,14 @@
 
     ```json
     {"color":"VALUE"}
-    ```
+    ```a
     
     Where `VALUE` is `blue`, `red`, or `green`, depending on the filename.
 3.  Add three `<button>` elements on `index.html.erb`, giving them, respectively, both `class`es and inner text of `"blue"`, `"red"`, and `"green"`.
 4.  Put the latest version of jQuery into the `javascripts` directory.
 5.  Move the `javascript_include_tag` line in `layouts/layout.erb` right before the ending `</body>` tag.
 6.  Open `javascripts/all.js`, and keep the first commented line-as is. This line causes jQuery to automaticaly be included and downloaded.
-7.  After the first line, add behavior that makes clicking the `button`s make an AJAX GET call, where the URL is the path to the JSON file whose name corresponds with the button (include `data` as part of the path). If the AJAX call is successful, take the `response.color` value and apply it as the `background` CSS property to the `body` of the page. jQuery functions you should use:
+7.  After the first line, add behavior that makes clicking the `button`s make an Ajax GET call, where the URL is the path to the JSON file whose name corresponds with the button (include `data` as part of the path). If the Ajax call is successful, take the `response.color` value and apply it as the `background` CSS property to the `body` of the page. jQuery functions you should use:
     *   `$`
     *   `.on`
     *   `$.ajax`

@@ -20,8 +20,9 @@
     *   `$.ajax`
     *   `.done`
     *   `.css` (you will have to learn how to use this)
+    
     Since these are `<button>` elements and not `<input type="submit">`, you don't need to `event.preventDefault` in your event listener, as `button`s do nothing by default.
-7.  Run `middleman server` and test it out locally.
+8.  Run `middleman server` and test it out locally.
 
 ## Extra credit:
 

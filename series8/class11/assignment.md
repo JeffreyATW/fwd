@@ -17,4 +17,4 @@
 
 * * *
 
-[Solution](assignment)
+[Solution](http://jeffreyatw.github.io/fwd/series8/class11/solution/)

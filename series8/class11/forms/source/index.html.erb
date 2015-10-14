@@ -1,0 +1,39 @@
+---
+title: Welcome to Middleman
+---
+
+<div class="welcome">
+  <form action="submit" method="post">
+    <div class="form-group">
+      <label for="first_name">First Name</label>
+      <input type="text" name="first_name" class="form-control" id="first_name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" name="email" class="form-control" id="email">
+    </div>
+    <div class="form-group">
+      <label for="life_story">Life Story</label>
+      <textarea name="life_story" class="form-control" id="life_story"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="country">Country</label>
+      <select class="form-control" id="country" name="country" required>
+        <option value="">-- Select --</option>
+        <option value="UG">Uganda</option>
+        <option value="other">Everywhere Else</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" name="password" class="form-control" id="password" required minlength="8">
+    </div>
+    <div class="form-group">
+      <label for="confirm_password">Confirm Password</label>
+      <input type="password" name="confirm_password" class="form-control" id="confirm_password" required minlength="8">
+    </div>
+    <button type="submit" class="btn btn-default">Click me to submit</button>
+    <input type="submit" value="Click me to submit" class="btn">
+    <input type="reset" class="btn">
+  </form>
+</div><!-- .welcome -->

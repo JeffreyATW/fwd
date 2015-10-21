@@ -9,12 +9,12 @@
 
 *   Create an Angular module. `counter` is a fine name.
 *   Create a controller on the Angular module. `MainController` works.
-*   Reference these names using the `ng-app` and `ng-controller` directives on the `<body>` element.
-*   Pass `$scope` into the `MainController`'s function. [Read up on Inline Array Notation](https://docs.angularjs.org/guide/di#inline-array-notation) if you need help.
+*   Reference these names, respectively, using the `ng-app` and `ng-controller` directives on the `<body>` element.
+*   Pass `$scope` into the `MainController`'s function. [Read up on Inline Array Annotation](https://docs.angularjs.org/guide/di#inline-array-annotation) if you need help.
 *   Turn the existing `counter` variable into a `$scope` property.
 *   Replace the `class` attribute on the `<button>` with an `ng-class` directive which applies the proper `class` based on the logic from the existing jQuery code. Remember, the value of `ng-class` should be an object containing `class` names as keys, and boolean statements as values. These boolean statements can have arithmetic in them if necessary.
-*   Define a method on the `$scope` that increments `counter` when called.
-*   Add an `ng-click` directive to the `<button>` that calls said function.
+*   Define a method on the `$scope` that increments `$scope.counter` when called.
+*   Add an `ng-click` directive, which calls said function, to the `<button>`.
 *   Change the content of the button to print out the current value of `counter`.
 
 * * *

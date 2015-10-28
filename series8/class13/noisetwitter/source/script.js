@@ -57,37 +57,50 @@ $('.tweets').on('click', '.favorite', function () {
   $(this).closest('.tweet').toggleClass('favorited');
 });*/
 
-angular.module('NoiseTwitter', []);
+angular.module('NoiseTwitter', ['ngRoute']);
 
-angular.module('NoiseTwitter').controller('MainController', ['$scope', function ($scope) {
-  $scope.hello = "Hi there!";
+angular.module('NoiseTwitter').config(['$routeProvider', function ($routeProvider) {
+  $routeProvider.when('/', {
+    controller: 'MainController',
+    templateUrl: 'main.html'
+  }).when('/tweets/:id', {
+    controller: 'ShowController',
+    templateUrl: 'show.html',
+    /*resolve: {
+      tweets: $.ajax('data/tweets.json')
+    }*/
+  });
+}]);
 
-  $scope.tweets = [
+angular.module('NoiseTwitter').run(['$rootScope', function ($rootScope) {
+  /*$.ajax('data/tweets.json').done(function (response) {
+    $rootScope.$apply(function () {
+      $rootScope.tweets = response;
+    });
+  });*/
+  $rootScope.tweets = [
     {
-      author: 'JeffreyATW',
-      time: '1h',
-      content: 'You give love a bad name.'
+      "id": 2,
+      "author": "JeffreyATW",
+      "time": "1h",
+      "content": "You give love a bad name."
     },
     {
-      author: 'JeffreyATW',
-      time: '2h',
-      content: 'Old McDonald had a farm.'
+      "id": 1,
+      "author": "JeffreyATW",
+      "time": "2h",
+      "content": "Old McDonald had a farm."
     },
     {
-      author: 'JeffreyATW',
-      time: '3h',
-      content: "I'm a little teapot, short and stout."
+      "id": 0,
+      "author": "JeffreyATW",
+      "time": "3h",
+      "content": "I'm a little teapot, short and stout."
     }
   ];
+}]);
 
-  $scope.toggleRetweet = function (tweet) {
-    tweet.retweeted = !tweet.retweeted;
-  };
-
-  $scope.toggleFavorite = function (tweet) {
-    tweet.favorited = !tweet.favorited;
-  };
-
+angular.module('NoiseTwitter').controller('MainController', ['$scope', function ($scope) {
   $scope.addNewTweet = function () {
     var newTweetObj = {
       author: 'JeffreyATW',
@@ -101,12 +114,29 @@ angular.module('NoiseTwitter').controller('MainController', ['$scope', function 
   };
 }]);
 
+angular.module('NoiseTwitter').controller('ShowController', ['$routeParams', '$scope', '$rootScope', function ($routeParams, $scope, $rootScope) {
+  for (var i = 0; i < $rootScope.tweets.length; i += 1) {
+    if ($routeParams.id == $rootScope.tweets[i].id) {
+      $scope.tweet = $rootScope.tweets[i];
+    }
+  }
+}]);
+
 angular.module('NoiseTwitter').directive('tweet', [function () {
   return {
     replace: true,
     restrict: 'EA', // E stands for element, A stands for attribute, C for class
-    link: function () {
-      console.log('this should log three times!');
+    scope: {
+      data: '='
+    },
+    link: function ($scope) {
+      $scope.toggleRetweet = function () {
+        $scope.data.retweeted = !$scope.data.retweeted;
+      };
+
+      $scope.toggleFavorite = function () {
+        $scope.data.favorited = !$scope.data.favorited;
+      };
     },
     templateUrl: 'tweet.html'
   };

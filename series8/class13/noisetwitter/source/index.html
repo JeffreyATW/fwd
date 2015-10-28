@@ -4,32 +4,40 @@
     <title>NoiseTwitter</title>
     <link href="style.css" rel="stylesheet" type="text/css">
   </head>
-  <body ng-app="NoiseTwitter" ng-controller="MainController">
-    {{ hello }}
-    <form method="post" class="tweetbox cf" ng-submit="addNewTweet()">
-      <textarea name="tweet_content" class="tweetbox__field" placeholder="Compose new Tweet..." ng-model="newTweet"></textarea>
-      <input class="tweetbox__button" type="submit" value="Tweet" ng-disabled="newTweet.length > 140">
-      <div class="tweetbox__counter">{{ 140 - newTweet.length }}</div>
-    </form>
-    <section class="tweets">
-      <tweet ng-repeat="tweet in tweets"></tweet>
-    </section>
+  <body ng-app="NoiseTwitter">
+    <div ng-view></div>
+    <script type="text/ng-template" id="main.html">
+      <form method="post" class="tweetbox cf" ng-submit="addNewTweet()">
+        <textarea name="tweet_content" class="tweetbox__field" placeholder="Compose new Tweet..." ng-model="newTweet"></textarea>
+        <input class="tweetbox__button" type="submit" value="Tweet" ng-disabled="newTweet.length > 140">
+        <div class="tweetbox__counter">{{ 140 - newTweet.length }}</div>
+      </form>
+      <section class="tweets">
+        <div ng-repeat="tweetObj in tweets">
+          <tweet data="tweetObj"></tweet>
+        </div>
+      </section>
+    </script>
+    <script type="text/ng-template" id="show.html">
+      {{ tweet.content }}
+    </script>
     <script type="text/ng-template" id="tweet.html">
-      <article class="tweet cf" ng-class="{retweeted: tweet.retweeted, favorited: tweet.favorited}">
-        <a href="http://twitter.com/{{ tweet.author }}" class="tweet__avatar">
-          <img src="avatar.jpg" alt="{{ tweet.author }}">
+      <article class="tweet cf" ng-class="{retweeted: data.retweeted, favorited: data.favorited}">
+        <a href="http://twitter.com/{{ data.author }}" class="tweet__avatar">
+          <img src="avatar.jpg" alt="{{ data.author }}">
         </a>
         <div class="tweet__details">
-          <small class="tweet__time">{{ tweet.time }}</small>
-          <a href="http://twitter.com/{{ tweet.author }}" class="tweet__author">{{ tweet.author }}</a>
-          <p class="tweet__content">{{ tweet.content }}</p>
-          <button class="retweet" ng-click="toggleRetweet(tweet)">Retweet</button>
-          <button class="favorite" ng-click="toggleFavorite(tweet)">Favorite</button>
+          <small class="tweet__time">{{ data.time }}</small>
+          <a href="http://twitter.com/{{ data.author }}" class="tweet__author">{{ data.author }}</a>
+          <p class="tweet__content">{{ data.content }}</p>
+          <button class="retweet" ng-click="toggleRetweet()">Retweet</button>
+          <button class="favorite" ng-click="toggleFavorite()">Favorite</button>
         </div>
       </article>
     </script>
     <script src="jquery.js"></script>
     <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

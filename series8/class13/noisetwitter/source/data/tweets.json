@@ -1,0 +1,20 @@
+[
+  {
+    "id": 2,
+    "author": "JeffreyATW",
+    "time": "1h",
+    "content": "You give love a bad name."
+  },
+  {
+    "id": 1,
+    "author": "JeffreyATW",
+    "time": "2h",
+    "content": "Old McDonald had a farm."
+  },
+  {
+    "id": 0,
+    "author": "JeffreyATW",
+    "time": "3h",
+    "content": "I'm a little teapot, short and stout."
+  }
+]

@@ -7,8 +7,8 @@
 4.  Place three new elements called `<counter-button>` at the beginning of the `<body>`. They require closing tags.
 5.  In `script.js`, create a new directive on the `counter` module called `counterButton`.
 6.  Give the directive a scope of its own. It can be either isolated or not.
-7.  Set its `templateUrl` to `button.html`.
-8.  Restrict the directive to only apply to elements (`E`).
+7.  Set its `templateUrl` to `'button.html'`.
+8.  Restrict the directive to only apply to elements (`'E'`).
 9.  Tell the directive to replace its element with its template's content.
 10.  Move the `MainController`'s `counter` and `incrementCounter` properties to the directive's linking function's scope.
 

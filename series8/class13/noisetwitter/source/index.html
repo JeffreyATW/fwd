@@ -19,7 +19,7 @@
       </section>
     </script>
     <script type="text/ng-template" id="show.html">
-      {{ tweet.content }}
+      <tweet data="tweet"></tweet>
     </script>
     <script type="text/ng-template" id="tweet.html">
       <article class="tweet cf" ng-class="{retweeted: data.retweeted, favorited: data.favorited}">

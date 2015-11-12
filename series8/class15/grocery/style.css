@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  position: relative;
+  width: 960px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.reopening {
+  background: red;
+  color: yellow;
+  left: 100px;
+  margin: 0;
+  position: absolute;
+  top: 0;
+}
+
+ul {
+  height: 600px;
+  list-style: none;
+  padding: 0;
+  position: relative;
+}
+
+li {
+  border: 3px solid black;
+  height: 300px;
+  position: absolute;
+  width: 480px;
+}
+
+li h2, li img, li .price {
+  position: absolute;
+}
+
+li h2 {
+  margin: 0;
+  z-index: 1;
+}
+
+.cheese {
+  left: 0;
+  top: 0;
+}
+
+.cheese h2 {
+  top: 20px;
+  left: 20px;
+}
+
+.cheese img {
+  bottom: 0;
+  left: 0;
+}
+
+.cheese .price {
+  right: 0;
+  top: 0;
+}
+
+.chicken {
+  right: 0;
+  top: 0;
+}
+
+.chicken h2 {
+  bottom: 20px;
+  right: 20px;
+}
+
+.fruit {
+  bottom: 0;
+  left: 0;
+}
+
+.fruit h2 {
+  right: 20px;
+  top: 20px;
+}
+
+.bread {
+  bottom: 0;
+  right: 0;
+}
+
+.bread h2, .bread .price {
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.bread h2 {
+  top: 20px;
+}
+
+.bread img {
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -132.5px;
+  top: 50%;
+}
+
+.bread .price {
+  bottom: 0;
+}
+
+.price {
+  color: red;
+  font-size: 3em;
+}

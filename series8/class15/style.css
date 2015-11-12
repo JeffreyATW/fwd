@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+/* selects all paragraphs */
+p {
+  background: gray;
+  border: 5px solid red;
+}
+
+/* selects anything with a class of "greeting" */
+.greeting {
+  padding: 20px;
+}
+
+/* selects any paragraph with a class of "greeting"
+inside the body */
+div p.greeting {
+  position: absolute;
+  right: 0;
+}
+
+.greeting.japanese {
+
+}
+
+.japanese.greeting {
+
+}
+
+div, .japanese {
+
+}
+
+div p.greeting, .greeting.japanese {
+
+}
+
+/* avoid IDs */
+#goodbye-container {
+
+}

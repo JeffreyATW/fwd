@@ -3,11 +3,11 @@
 
 A designer has given you a mockup and assets, and wants you to write the HTML and CSS:
 
-*   [Mockup](assignment/mockup.png)
-*   [Advertisement](assignment/ad.gif)
-*   [Photo of Curly](assignment/curly.jpg)
-*   [Photo of Larry](assignment/larry.jpg)
-*   [Photo of Moe](assignment/moe.jpg)
+*   [Mockup](http://jeffreyatw.github.io/fwd/series8/class16/assignment/mockup.png)
+*   [Advertisement](http://jeffreyatw.github.io/fwd/series8/class16/assignment/ad.gif)
+*   [Photo of Curly](http://jeffreyatw.github.io/fwd/series8/class16/assignment/curly.jpg)
+*   [Photo of Larry](http://jeffreyatw.github.io/fwd/series8/class16/assignment/larry.jpg)
+*   [Photo of Moe](http://jeffreyatw.github.io/fwd/series8/class16/assignment/moe.jpg)
 
 Here are some tips for putting the site together:
 

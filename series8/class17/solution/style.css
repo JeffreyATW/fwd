@@ -1,0 +1,49 @@
+header {
+  background: red;
+  color: white;
+  margin-bottom: 20px;
+}
+
+nav {
+  background: blue;
+  color: white;
+  margin-bottom: 20px;
+}
+
+aside {
+  background: lime;
+  margin-bottom: 20px;
+}
+
+article {
+  background: yellow;
+  margin-bottom: 20px;
+}
+
+footer {
+  background: black;
+  color: white;
+}
+
+@media screen and (min-width: 960px) {
+  body {
+    width: 960px;
+  }
+
+  nav, aside, article {
+    float: left;
+    margin-right: 20px;
+  }
+
+  nav, aside {
+    width: 200px;
+  }
+
+  article {
+    width: 500px;
+  }
+
+  footer {
+    clear: both;
+  }
+}

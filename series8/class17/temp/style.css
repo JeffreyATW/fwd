@@ -1,0 +1,24 @@
+html, 
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.panel {
+  flex-grow: 1;
+  justify-content: center;
+  display: flex;
+}
+
+.panel:nth-child(2) .item {
+  align-self: flex-end;
+}
+
+.panel:nth-child(3) .item {
+  align-self: flex-start;
+}

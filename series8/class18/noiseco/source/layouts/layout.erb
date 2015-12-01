@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine or request Chrome Frame -->
+    <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title><%= current_page.data.title || "NoiseCo" %></title>
+
+    <%= stylesheet_link_tag "normalize", "all" %>
+    <%= javascript_include_tag  "all" %>
+  </head>
+
+  <body class="<%= page_classes %>">
+    <header>
+      <div class="container">
+        <h1>NoiseCo</h1>
+        <div class="login">
+          Welcome, Jeffrey
+          <a href="#">My Account</a>
+          <a href="#">Log Out</a>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <div class="container">
+        <ul>
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <%= yield %>
+    <footer>
+      <div class="container">
+        <div class="footer__left">
+          <h2>NoiseCo</h2>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Home</a>
+              </li>
+              <li>
+                <a href="#">About</a>
+              </li>
+              <li>
+                <a href="#">Clients</a>
+              </li>
+              <li>
+                <a href="#">Testimonials</a>
+              </li>
+              <li>
+                <a href="#">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <small>© 2015 NoiseCo. All rights reversed.</small>
+      </div>
+    </footer>
+  </body>
+</html>

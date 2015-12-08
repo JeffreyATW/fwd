@@ -12,9 +12,13 @@ $skyblue: #77A2B5;
   white-space: nowrap;
 }
 
+html {
+  background: $navy;
+}
+
 .container {
   margin: 0 auto;
-  width: 960px;
+  max-width: 960px;
 }
 
 a {
@@ -81,6 +85,13 @@ nav {
     height: 130px;
   }
 
+  .container {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;    
+  }
+
   h1 {
     color: #fff;
     font-size: 40px;
@@ -91,6 +102,61 @@ nav {
 
   strong {
     display: block;
+  }
+
+  a {
+    background: linear-gradient(to bottom, $skyblue, $teal);
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .5), inset -1px -1px 1px rgba(0, 0, 0, .5);
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 20px;
+  }
+}
+
+.details {
+  background: #ECE2C6;
+  color: $navy;
+  padding: 40px 0;
+
+  ul {
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    width: 75%;
+  }
+
+  li {
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    padding-left: 57px;
+
+    &:last-child {
+      margin: 0;
+    }
+  }
+
+  h2 {
+    margin: 0 0 5px;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &__detail {
+    &--agile {
+      background-image: image-url('agile.png');
+    }
+
+    &--mobile {
+      background-image: image-url('mobile.png');
+    }
+
+    &--cloud {
+      background-image: image-url('cloud.png');
+    }
   }
 }
 
@@ -115,5 +181,30 @@ footer {
   .footer__left {
     align-items: center;
     display: flex;
+  }
+
+  nav {
+    font-size: 14px;
+    margin-left: 30px;
+
+    li:first-child a {
+      border-left: none;
+    }
+
+    a {
+      border-left: 1px solid #000;
+      line-height: 1;
+      padding: 0 10px;
+    }
+  }
+
+  small {
+    color: $skyblue;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  * {
+    flex-direction: column;
   }
 }

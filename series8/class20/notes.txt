@@ -1,0 +1,40 @@
+The back-end
+
+password: front-end
+
+HTTP
+
+PHP
+PHP: Hypertext Preprocessor
+
+Node.JS
+Express
+
+Ruby
+Rails
+
+/var/www/html/public_html
+
+1. Browser sends request
+2. Web server application receives request
+3. ???
+4. Web server application sends response
+5. Browser receives response
+
+Rails:
+Database access
+Routing
+Controller actions
+Asset precompilaton
+Model management
+Views/templating
+Security features
+Caching
+
+Rails workflow (most of the time):
+1. Request received
+2. Match to a route
+3. Run proper controller action
+4. Controller might load up data from a database using a model object
+5. Controller renders view with data from database
+6. Rails's server sends out response

@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* this selects headings level 1 */
+h1 {
+  background: green;
+  margin: 0;
+  padding: 10px;
+}
+
+/* this selects paragraphs */
+p {
+  background: #ffff77;
+  border: 5px solid red;
+  height: 200px;
+  padding-left: 2em;
+  margin: 1em 50px 2em;
+  width: 200px;
+}
+
+/*h1, p {
+  display: inline;
+}*/
+
+.callout {
+  background: #eeeeee;
+  font-size: 1.5em;
+}
+
+.advertisement {
+  border: 10px groove white;
+  font-family: 'Helvetica', sans-serif;
+}
+
+.advertisement a {
+  color: pink;
+  font-size: 50px;
+}
+
+a.advertisement {
+  background: lightblue;
+}
+
+.advertisement.yahoo {
+  background: purple;
+}

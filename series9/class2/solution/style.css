@@ -1,0 +1,22 @@
+.style-one {
+  color: green;
+}
+
+.style-two {
+  color: red;
+  margin-bottom: 5em;
+  background: grey;
+  padding: 20px;
+}
+
+.style-one .style-two {
+  color: yellow;
+}
+
+.style-one.style-two {
+  color: blue;
+}
+
+.style-one, .style-one.style-two {
+  display: inline;
+}

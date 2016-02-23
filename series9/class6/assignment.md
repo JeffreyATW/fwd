@@ -11,7 +11,7 @@
     *   `.clone`
     *   `.append`
     
-    Read up on the [jQuery API Documentation](http://api.jquery.com/) to learn how to use these functions. A great help would be to use this version of the [Twitter client](https://github.com/JeffreyATW/fwd/tree/master/series9/class6/noiseco) we looked at in class, which uses the above functions.
+    Read up on the [jQuery API Documentation](http://api.jquery.com/) to learn how to use these functions. A great help would be to use this version of the [Twitter client](https://github.com/JeffreyATW/fwd/tree/master/series9/class6/noisetwitter) we looked at in class, which uses the above functions.
 
 ## Extra credit:
 

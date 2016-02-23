@@ -22,4 +22,4 @@
 
 * * *
 
-[Solution](http://jeffreyatw.github.io/fwd-assignments/series9/class6/solution/)
+[Solution](http://jeffreyatw.github.io/fwd/series9/class6/solution/)

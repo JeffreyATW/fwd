@@ -1,0 +1,29 @@
+@import 'stylesheets/bootstrap';
+
+$brand-color: #005275;
+$good-width: 500px;
+
+@mixin cool-looking($border-width) {
+  font-family: 'Comic Sans MS';
+  border: $border-width solid pink;
+}
+
+header {
+  h1 {
+    @include cool-looking(10px);
+    color: $brand-color;
+  }
+
+  h2 {
+    background: $brand-color;
+    width: $good-width - 200px;
+  }
+
+  nav {
+    @include cool-looking(20px);
+  }
+
+  ul {
+
+  }
+}

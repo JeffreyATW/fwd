@@ -17,6 +17,9 @@
 15.  Copy the markup into `index.ejs`.
 16.  Replace each `...` in the markup with some individual text of your own.
 17.  Run `harp server` from within the `homepage` folder and access the site from your browser.
+18.  Add a `.gitignore` file to the `homepage` folder and put `www` inside it.
+19.  Close your Harp server and run `harp compile`.
+20.  Go into the `www` folder and you should see some HTML/CSS/JS files.
 
 * * *
 

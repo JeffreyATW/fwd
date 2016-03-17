@@ -1,0 +1,9 @@
+1. Enter a URL, click a link, submit a form, etc.
+2. Web browser sends out a request
+3. ~Internet~
+4. Web server receives request
+5. ???
+6. Web server sends response
+7. ~Internets~
+8. Web browser receives response
+9. You get your file or page or whatever.

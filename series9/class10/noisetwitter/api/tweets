@@ -1,0 +1,6 @@
+{
+  "status": "SUCCESS",
+  "data": {
+    "tweet_content": "Here is the tweet you posted!"
+  }
+}

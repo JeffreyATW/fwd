@@ -1,0 +1,46 @@
+body {
+  background: pink;
+  font-family: "Comic Sans MS", "Joker", "Rosewood", "Curlz MT", "Arial", cursive;
+  font-style: italic;
+  color: blue;
+  border: 30px groove purple;
+}
+
+h1 {
+  text-shadow: 5px 5px 5px yellow;
+  background: url("sparkles.gif");
+}
+
+h1:before, h1:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+h1:before {
+  background-image: url("scuba.gif");
+  width: 175px;
+  height: 167px;
+}
+
+h1:after {
+  background-image: url("fisher.gif");
+  width: 140px;
+  height: 112px;
+}
+
+form {
+  margin: 50px;
+  max-width: 500px;
+}
+
+form:after {
+  content: " ";
+  display: block;
+  width: 110px;
+  height: 109px;
+  background: url("gone_fishing.gif") no-repeat center;
+  margin-top: 20px;
+}

@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NoiseTwitter</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body ng-app="NoiseTwitter">
+    <div ng-view></div>
+    <script type="text/ng-template" id="main.html">
+      <form class="tweetbox cf" ng-submit="addTweet()">
+        <textarea name="tweet_content" class="tweetbox__field" placeholder="Compose new Tweet..." ng-model="tweetText"></textarea>
+        <input class="tweetbox__button" type="submit" value="Tweet" ng-disabled="cantTweet()">
+        <div class="tweetbox__counter">{{ maxLength - tweetText.length }}</div>
+      </form>
+      <section class="tweets">
+        <div tweet="item" ng-repeat="item in tweets"></div>
+      </section>
+    </script>
+    <script type="text/ng-template" id="show.html">
+      <div tweet="tweet"></div>
+    </script>
+    <script type="text/ng-template" id="tweet.html">
+      <article class="tweet cf" ng-class="
+        {
+          'tweet--liked': tweet.liked,
+          'tweet--retweeted': tweet.retweeted
+        }
+      ">
+        <a href="http://twitter.com/{{ tweet.author }}" class="tweet__avatar">
+          <img src="avatar.jpg" alt="{{ tweet.author }}">
+        </a>
+        <div class="tweet__details">
+          <small class="tweet__time">{{ tweet.time }}</small>
+          <a href="http://twitter.com/{{ tweet.author }}" class="tweet__author">{{ tweet.author }}</a>
+          <p class="tweet__content">{{ tweet.content }}</p>
+          <button class="tweet__button--like" ng-click="like()">Like</button>
+          <button class="tweet__button--retweet" ng-click="retweet()">Retweet</button>
+        </div>
+      </article>
+    </script>
+    <script src="jquery-2.2.1.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="angular-route.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -63,6 +63,7 @@ app.directive('tweet', function () {
     scope: {
       tweet: '='
     },
+    restrict: 'A',
     replace: true,
     templateUrl: 'tweet.html',
     link: function ($scope) {

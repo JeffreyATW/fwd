@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background: lightgray;
+  border: 5px solid mediumspringgreen;
+  height: 200px;
+  width: 200px;
+}
+
+p {
+  background: lavender;
+  padding: 20px;
+}
+
+strong {
+  background: firebrick;
+  display: inline-block;
+  height: 200px;
+  width: 200px;
+}

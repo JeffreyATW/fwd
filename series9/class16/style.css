@@ -1,0 +1,64 @@
+body {
+  background: skyblue;
+  font-family: sans-serif;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+header {
+  background: cyan;
+  padding: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+.callout {
+  border: 2px inset;
+  width: 120px;
+}
+
+.callout--best {
+  float: left;
+}
+
+.callout--swell {
+  float: right;
+}
+
+.container {
+  background: orange;  
+}
+
+aside,
+main {
+  float: left;
+}
+
+aside {
+  width: 200px;
+}
+
+main {
+  background: white;
+  width: 600px;
+}
+
+main h2 {
+  clear: right;
+}
+
+figure {
+  float: right;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

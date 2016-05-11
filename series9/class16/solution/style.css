@@ -1,0 +1,47 @@
+html {
+  background: #eee;
+}
+
+body {
+  background: #ddd;
+  width: 860px;
+  margin: 0 auto;
+}
+
+section, aside {
+  float: left;
+  padding: 10px;
+}
+
+section {
+  background: white;
+  width: 600px;
+}
+
+aside {
+  width: 100px;
+}
+
+.curly, .moe {
+  float: right;
+}
+
+.larry {
+  float: left;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}

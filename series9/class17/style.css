@@ -1,0 +1,185 @@
+body {
+  background: dodgerBlue;
+  margin: 0;
+  padding-top: 77px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  max-width: 920px;
+  padding: 20px;
+}
+ 
+.page_header {
+  background: midnightblue;
+  color: white;
+  position: relative;
+}
+ 
+.page_header h1 {
+  text-align: center;
+  margin: 0;
+}
+
+.page_header, .top_nav, article, aside, footer {
+  padding: 10px;
+}
+
+.page_header, .top_nav, article, aside {
+  margin-bottom: 20px;
+}
+
+article h1, aside h1, footer h1 {
+  margin-top: 0;
+}
+
+.page_header a {
+  color: white;
+}
+
+.top_nav {
+  background: royalBlue;
+}
+
+.top_nav h1 {
+  border: 5px solid black;
+  border-radius: 20px;
+  height: 0;
+  position: relative;
+  text-indent: -9999px;
+  width: 100px;
+}
+
+.top_nav h1:before,
+.top_nav h1:after {
+  border: 5px solid black;
+  content: '';
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.top_nav h1:before {
+  top: -20px;
+}
+
+.top_nav h1:after {
+  bottom: -20px;
+}
+
+.top_nav a {
+  color: white;
+}
+
+.top_nav ul, footer nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+  
+.top_nav ul li, footer nav ul li {
+  margin-right: 20px;
+}
+
+.top_nav ul {
+  background: black;
+  display: flex;
+  transform: translateX(100%);
+  margin: 0;
+  position: fixed;
+  transition: transform .5s ease;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.show_nav .top_nav ul {
+  flex-direction: column;
+  justify-content: space-around;
+  transform: translateX(0);
+}
+
+.top_nav li {
+  font-size: 30px;
+  text-align: center;
+}
+
+article {
+  background: white;
+}
+
+aside {
+  background: mediumSeaGreen;
+  color: white;
+  margin-top: 20px;
+}
+
+footer {
+  background: darkGreen;
+  color: white;
+  clear: both;
+}
+
+footer a {
+  color: lightGreen;
+}
+
+footer nav ul {
+  font-size: 90%;
+  margin-bottom: 10px;
+}
+
+footer nav ul ul {
+  list-style-type: disc;
+  padding-left: 40px;
+}
+
+footer small {
+  display: block;
+  clear: both;
+  font-size: 1em;
+}
+
+footer nav ul ul li {
+  float: none;
+}
+
+/* For modern browsers */
+.cf:before,
+.cf:after {
+    content:"";
+    display:table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf {
+    zoom:1;
+}
+
+@media only screen and (min-width: 960px) {
+  .top_nav ul li, footer nav ul li {
+    float: left;
+  }
+
+  .top_nav h1 {
+    display: none;
+  }
+
+  .top_nav ul {
+    display: block;
+  }
+
+  article {
+    float: left;
+    width: 680px;
+  }
+
+  aside {
+    float: left;
+    margin-left: 20px;
+    margin-top: 0;
+    width: 180px;
+  }
+}

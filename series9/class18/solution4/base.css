@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+}
+
+.outer {
+  background: darkGreen;
+}
+
+.inner {
+  background: springGreen;
+}

@@ -1,0 +1,15 @@
+html {
+  background: pink;
+  /* fonts like Helvetica */
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+}

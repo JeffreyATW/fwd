@@ -1,0 +1,314 @@
+$navy: #002344;
+$teal: #005275;
+$skyblue: #77A2B5;
+
+%image-replace {
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;  
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  box-sizing: content-box;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 12px;
+}
+
+header {
+  background: $teal;
+  color: $navy;
+  padding: .5em 0;
+
+  h1 {
+    @extend %image-replace;
+    background: url('images/logo.png');
+    height: 50px;
+    margin: 0 auto;
+    width: 171px;
+  }
+
+  ul {
+    display: flex;
+    font-size: 14px;
+    justify-content: center;
+    margin: .5em 0 0;
+  }
+
+  li {
+    border-right: 1px solid $navy;
+    padding: 0 .35em;
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  a {
+    color: $skyblue;
+  }
+}
+
+nav,
+footer {
+  background: $navy;
+}
+
+nav {
+  ul {
+    margin: 0;
+
+    ul {
+      background: $navy;
+      display: none;
+      position: absolute;
+
+      a {
+        text-align: left;
+      }
+    }
+  }
+
+  li {
+    position: relative;
+    white-space: nowrap;
+  }
+
+  a {
+    color: $skyblue;
+    display: block;
+    font-size: 14px;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.hero {
+  background: url('images/hero.jpg') 50%;
+  background-size: cover;
+  font-size: 30px;
+  text-align: center;
+
+  &__overlay {
+    background: rgba(0, 0, 0, .25);  
+    padding: .5em 0;  
+  }
+
+  h1 {
+    color: white;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0 0 .5em;
+    text-shadow: 0 0 20px black;
+  }
+
+  a {
+    background: linear-gradient(to bottom, $skyblue, $teal);
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px rgba(255, 255, 255, .5),
+                inset -1px -1px rgba(0, 0, 0, .5); 
+    color: white;
+    display: inline-block;
+    padding: 10px 20px;
+    white-space: nowrap;
+  }
+}
+
+.details {
+  background: #ECE2C6;
+  color: $navy;
+  padding: 40px 0;
+  text-align: center;
+
+  ul {
+    margin: 0 auto;
+    width: 75%;
+  }
+
+  &__item {
+    background: 50% 0 no-repeat;
+    margin-bottom: 30px;
+    padding-top: 60px;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    &--agile {
+      background-image: url('images/agile.png');
+    }
+
+    &--mobile {
+      background-image: url('images/mobile.png');
+    }
+
+    &--cloud {
+      background-image: url('images/cloud.png');
+    }
+  }
+
+  h2 {
+    margin: 0 0 .25em;
+  }
+
+  p {
+    margin: 0;
+  }
+}
+
+footer {
+  padding: .5em 0;
+  text-align: center;
+
+  &, small {
+    font-size: 14px;
+  }
+
+  h2 {
+    @extend %image-replace;
+    background: url('images/logo_small.png');
+    height: 40px;
+    margin: 0 auto;
+    width: 137px;
+  }
+
+  nav {
+    margin-top: .5em;
+  }
+
+  a {
+    line-height: normal;
+    padding: 0 0 .5em;
+  }
+
+  small {
+    color: $skyblue;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  header {
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    h1 {
+      margin: 0;
+    }
+
+    ul {
+      margin: 0;
+    }
+  }
+
+  nav {
+    ul {
+      display: flex;
+    }
+
+    li {
+      &:hover {
+        ul {
+          display: block;
+
+          ul {
+            display: none;
+          }
+
+          li {
+            &:hover {
+              ul {
+                display: block;
+                left: 100%;
+                top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    a {
+      padding: 0 20px;
+    }
+  }
+
+  .hero {
+    padding-top: 220px;
+    text-align: left;
+
+    .container {
+      align-items: center;
+      display: flex;
+      justify-content: space-between;
+      min-height: 100px;
+    }
+
+    h1 {
+      font-size: 40px;
+      margin: 0;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  .details {
+    text-align: left;
+
+    &__item {
+      background-position: 0 0;
+      padding: 0 0 0 60px;
+    }
+  }
+
+  footer {
+    .container {
+      align-items: center;
+      display: flex;
+    }
+
+    h2 {
+      flex-shrink: 0;
+      margin: 0;
+    }
+
+    nav {
+      margin: 0 auto 0 30px;
+
+      li {
+        border-right: 1px solid #000;
+
+        &:last-child {
+          border-right: 0;
+        }
+      }
+
+      a {
+        padding: 0 10px
+      }
+    }
+  }
+}

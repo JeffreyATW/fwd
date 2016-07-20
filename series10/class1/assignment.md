@@ -45,4 +45,4 @@ We didn't exactly cover the these in class. You'll have to Google up how to do t
 
 * * *
 
-[Solution](http://jeffreyatw.github.io/fwd/series8/class1/solution/)
+[Solution](http://jeffreyatw.github.io/fwd/series10/class1/solution/)

@@ -1,0 +1,57 @@
+html {
+  background: pink;
+  /* fonts like Helvetica */
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  background: #fff; /* white */
+  border: 5px solid lightsteelblue;
+  /* height: 200px;
+     margin-bottom: 5em;
+     margin-top: 0; */
+  /* all 4 sides
+     margin: 0; */
+  /* vertical, horizontal
+     margin: 0 500px; */
+  /* top, horizontal, bottom */
+  margin: 0 0 5em;
+  /* top, right, bottom, left
+     margin: 0 0 5em 0; */
+  padding: 1em;
+  width: 200px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ol li {
+  color: green;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.first-list-item {
+  font-size: 3em;
+}
+
+li.special {
+  background: yellow;
+}
+
+li .special, h1 {
+  opacity: .5;
+}
+
+ul li.special {
+  box-shadow: 0 0 50px red;
+}
+
+li * {
+  padding: 100px;
+}

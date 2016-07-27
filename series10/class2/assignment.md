@@ -2,7 +2,7 @@
 
 # Assignment for Week 2
 
-1.  Follow the steps in [Assignment 1](https://github.com/JeffreyATW/fwd-assignments/blob/master/series10/class1/assignment.md), up to where you link a CSS file (or use your work from last week).
+1.  Follow the steps in [Assignment 1](https://github.com/JeffreyATW/fwd/blob/master/series10/class1/assignment.md), up to where you link a CSS file (or use your work from last week).
 2.  Duplicate the `<p>` element three times. There should be four `<p>` elements neighboring each other. You can keep the contents of the original `<p>` or change it around, but keep the `<a>` element inside them.
 3.  Add a `class` attribute to the **first _and_ third** `<p>` tag, with the value `style-one`.
 4.  Add a `class` attribute to the **second** `<p>` tag, with the value `style-two`.

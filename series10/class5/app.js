@@ -45,9 +45,9 @@ arrayOfStrings[0] === "hello"
 
 var arrayOfStuff = [1, "hello", true, alert, arr, undefined];
 
-for (var i = 0; i < arrayOfStrings.length; i += 1) {
-  if (typeof arrayOfStrings[i] === 'string') {
-    console.log(arrayOfStrings[i]);
+for (var i = 0; i < arrayOfStuff.length; i += 1) {
+  if (typeof arrayOfStuff[i] === 'string') {
+    console.log(arrayOfStuff[i]);
   }
 }
 
@@ -90,6 +90,8 @@ var giveMeSomethingCreepy = function (message) {
 var makeSum = function (addend1, addend2) {
   return addend1 + addend2;
 }
+
+var sum = makeSum(1, 1);
 
 var myName = 'Jeffrey';
 

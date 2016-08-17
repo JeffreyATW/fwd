@@ -1,0 +1,48 @@
+body {
+  width: 300px;
+  margin: 0 auto;
+}
+
+body, input, button {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+.to-do-list {
+  list-style-type: none;
+  border-radius: 5px;
+  border: 1px solid #999;
+  padding: 0;
+}
+
+.to-do-list li {
+  padding: 5px;
+  border-bottom: 1px solid #999;
+}
+
+.to-do-list li:last-child {
+  border-bottom: none;
+}
+
+.add {
+  display: block;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #ddd;
+  cursor: pointer;
+}
+
+.add:before {
+  content: "+";
+  color: green;
+  font-weight: bold;
+  padding-right: 10px;
+}
+
+.new-field {
+  font-size: 16px;
+  padding: 5px;
+  border: 1px solid #999;
+  margin: 0 0 10px;
+}

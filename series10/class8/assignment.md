@@ -15,7 +15,7 @@
 8.  In the first column of the grid, insert a `<button>` with a class of `button` and inner text of `Open Modal`.
 9.  Add a `data-open` attribute to the button with the ID of the modal as its value. Clicking the button should open the modal.
 10.  In the second column of the grid, add a paragraph with the text `I'm testing out Foundation!`.
-11.  Surround "`Foundation`" in a basic **Tooltip** `span`. Change the value of the `title` attribute to `"A front-end framework."`.
+11.  Surround the word "`Foundation`" in a basic **Tooltip** `span`. Change the value of the `title` attribute to `"A front-end framework."`.
 12.  Open `index.html` in your browser to see your page. If the headings in the callout and modal aren't in Comic Sans MS, make sure you're still running `foundation watch` in your terminal.
 
 ## Extra credit

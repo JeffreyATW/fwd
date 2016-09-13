@@ -21,7 +21,7 @@
 ## Extra credit
 
 1. Put the callout inside a column of no specific width, inside a new row.
-2. Go into `_settings.scss` and change the `$callout-margin` to `1rem 0`.
+2. Go into `scss/_settings.scss` and change the `$callout-margin` to `1rem 0`.
 
 * * *
 

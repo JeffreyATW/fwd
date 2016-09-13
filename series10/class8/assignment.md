@@ -1,7 +1,7 @@
 ## Front-end Web Development
 # Assignment for Week 8
 
-1.  In your terminal, use `foundation new` to create a new **website**, 'week-8', with a **Basic Template**.
+1.  In your terminal, use `foundation new` to create a new **website**, `week-8`, with a **Basic Template**.
 2.  `cd` into `week-8` and run `foundation watch`.
 3.  Open the `week-8` folder in your file manager (Finder, Explorer, etc.)
 4.  Edit `index.html` and remove everything, except for the `script` elements, inside the `<body>` element.

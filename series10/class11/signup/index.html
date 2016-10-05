@@ -1,0 +1,42 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foundation for Sites</title>
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <form method="post" action="https://google.com/signup">
+      <label for="username-field">Username</label>
+      <input id="username-field" type="text" name="username" required>
+
+      <label for="email-field">Email</label>
+      <input id="email-field" type="email" name="email" required>
+
+      <label for="phone-field">Phone number</label>
+      <input id="phone-field" type="tel" name="phone">
+
+      <label for="password-field">Password</label>
+      <input id="password-field" type="password" name="password" required minlength="8" pattern="^(?=(.*\d){1})(.*\S)(?=.*[a-zA-Z\S])[0-9a-zA-Z\S]{8,}" aria-describedby="passwordHelpText">
+      <p class="help-text" id="passwordHelpText">Your password must have at least 8 characters, an uppercase letter, a lowercase letter, a number, and a special character.</p>
+
+      <label for="password-confirmation-field">Confirm password</label>
+      <input id="password-confirmation-field" type="password" name="password_confirmation" required>
+
+      <input id="newsletter-checkbox" type="checkbox" name="newsletter">
+      <label for="newsletter-checkbox">YES! Sign me up for your newsletter!</label>
+
+      <div>
+        <input type="submit" class="button">
+      </div>
+    </form>
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/what-input/what-input.js"></script>
+    <script src="bower_components/foundation-sites/dist/foundation.js"></script>
+    <script src="bower_components/jquery-validation/dist/jquery.validate.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

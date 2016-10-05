@@ -1,0 +1,97 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+
+@include foundation-global-styles;
+@include foundation-grid;
+// @include foundation-flex-grid;
+@include foundation-typography;
+@include foundation-button;
+@include foundation-forms;
+// @include foundation-range-input;
+@include foundation-accordion;
+@include foundation-accordion-menu;
+@include foundation-badge;
+@include foundation-breadcrumbs;
+@include foundation-button-group;
+@include foundation-callout;
+@include foundation-close-button;
+@include foundation-menu;
+@include foundation-menu-icon;
+@include foundation-drilldown-menu;
+@include foundation-dropdown;
+@include foundation-dropdown-menu;
+@include foundation-flex-video;
+@include foundation-label;
+@include foundation-media-object;
+@include foundation-off-canvas;
+@include foundation-orbit;
+@include foundation-pagination;
+@include foundation-progress-bar;
+// @include foundation-progress-element;
+// @include foundation-meter-element;
+@include foundation-slider;
+@include foundation-sticky;
+@include foundation-reveal;
+@include foundation-switch;
+@include foundation-table;
+@include foundation-tabs;
+@include foundation-thumbnail;
+@include foundation-title-bar;
+@include foundation-tooltip;
+@include foundation-top-bar;
+@include foundation-visibility-classes;
+@include foundation-float-classes;
+// @include foundation-flex-classes;
+
+@include motion-ui-transitions;
+@include motion-ui-animations;
+
+body {
+  background: pink;
+  font-family: "Comic Sans MS", "Joker", "Rosewood", "Curlz MT", "Arial", cursive;
+  font-style: italic;
+  color: blue;
+  border: 30px groove purple;
+}
+
+h1 {
+  text-shadow: 5px 5px 5px yellow;
+  background: url("../img/sparkles.gif");
+}
+
+h1:before, h1:after {
+  content: " ";
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-block;
+  margin: 0 20px;
+}
+
+h1:before {
+  background-image: url("../img/scuba.gif");
+  width: 175px;
+  height: 167px;
+}
+
+h1:after {
+  background-image: url("../img/fisher.gif");
+  width: 140px;
+  height: 112px;
+}
+
+form {
+  margin: 50px;
+  max-width: 500px;
+}
+
+form:after {
+  content: " ";
+  display: block;
+  width: 110px;
+  height: 109px;
+  background: url("../img/gone_fishing.gif") no-repeat center;
+  margin-top: 20px;
+}

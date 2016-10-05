@@ -3,7 +3,6 @@
 
 [Bob's website needs some help!](assignment) He's got a bunch of jokers submitting invalid form data and cluttering up his databases. You can help!
 
-*   Middleman is not required for this assignment.
 *   You can see the passwords plain-as-day when you start typing into the fields. What can you do to those `<input>` elements to change it?
 *   When you submit the form, all of the data (including the passwords) shows up in the address bar. What modification can you make to the `<form>` element to send the data slightly more covertly?
 *   Bob doesn't care about whether you fill in your first or last name, but the email and passwords are required.

@@ -1,0 +1,39 @@
+button {
+  border: none;
+  border-radius: 50px;
+  box-shadow: 5px 5px 5px rgba(255,255,255,.5) inset, -5px -5px 5px rgba(0,0,0,.5) inset;
+  color: #000;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 2em;
+  height: 100px;
+  left: 50%;
+  line-height: 100px;
+  margin: -50px 0 0 -50px;
+  outline: none;
+  position: absolute;
+  text-align: center;
+  text-decoration: none;
+  top: 50%;
+  width: 100px;
+}
+
+button:active {
+  box-shadow: 5px 5px 5px rgba(0,0,0,.5) inset, -5px -5px 5px rgba(255,255,255,.5) inset;
+}
+
+.zero {
+  background-color: red;
+}
+
+.one {
+  background-color: green;
+}
+
+.two {
+  background-color: blue;
+}
+
+.three {
+  background-color: yellow;
+}

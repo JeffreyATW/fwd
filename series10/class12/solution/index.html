@@ -1,0 +1,13 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Click me</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="jquery.js"></script>
+    <script src="angular.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-app="counter" ng-controller="MainCtrl">
+    <button ng-class="{zero: counter % 4 === 0, one: counter % 4 === 1, two: counter % 4 === 2, three: counter % 4 === 3}" ng-click="incrementCounter()">{{ counter }}</a>
+  </body>
+</html>

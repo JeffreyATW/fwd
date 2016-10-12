@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <title>NoiseTwitter</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="jquery-3.1.0.min.js"></script>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-app="NoiseTwitter" ng-controller="MainCtrl">
+    <script type="text/ng-template" id="/tweet.html">
+      <article class="tweet" 
+      ng-class="{ retweeted: tweet.retweeted, liked: tweet.liked }">
+        <a href="http://twitter.com/{{ tweet.author }}" class="tweet__avatar">
+          <img ng-src="{{ tweet.avatar }}" alt="{{ tweet.author }}">
+        </a>
+        <div class="tweet__details">
+          <div class="tweet__metadata">
+            <a href="http://twitter.com/{{ tweet.author }}" class="tweet__author">{{ tweet.author }}</a>
+            <small class="tweet__time">{{ tweet.time }}</small>
+          </div>
+          <p class="tweet__content">{{ tweet.content }}</p>
+          <button class="retweet" ng-click="retweet(tweet)">Retweet</button>
+          <button class="like" ng-click="like(tweet)">Like</button>
+        </div>
+      </article>
+    </script>
+    <script type="text/ng-template" id="/main.html">
+      <form class="tweetbox" ng-submit="addTweet()">
+        <textarea name="tweet_content" class="tweetbox__field" placeholder="Compose new Tweet..." ng-model="newTweetText"></textarea>
+        <div class="tweetbox__actions">
+          <div class="tweetbox__counter">{{ characterLimit - newTweetText.length }}</div>
+          <input class="tweetbox__button" type="submit" value="Tweet" ng-disabled="formValid()">
+        </div>
+      </form>
+      <section class="tweets">
+        <div ng-include src="'/tweet.html'" ng-repeat="tweet in tweets"></div>
+      </section>
+    </script>
+    <div ng-include src="currentPage"></div>
+  </body>
+</html>

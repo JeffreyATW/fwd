@@ -19,4 +19,4 @@
 
 * * *
 
-[Solution](http://jeffreyatw.github.io/fwd/series10/class13/solution/)
+[Solution](https://github.com/JeffreyATW/fwd/tree/master/series10/class13/solution)

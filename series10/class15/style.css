@@ -1,0 +1,61 @@
+body {
+  background-color: skyblue;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+header {
+  background-color: cyan;
+}
+
+h1 {
+  text-align: center;
+}
+
+.callout--first {
+  float: left;
+}
+
+.callout--second {
+  float: right;
+}
+
+.container {
+  background-color: orange;
+}
+
+aside, main {
+  float: left;
+}
+
+aside {
+  width: 200px;
+}
+
+main {
+  background-color: white;
+  width: 600px;
+}
+
+main h3 {
+  clear: right;
+  /* or clear: both; */
+}
+
+figure {
+  float: right;
+}
+
+.clear {
+  clear: left;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}

@@ -1,0 +1,37 @@
+body {
+  background: lightgray;
+  margin: 0;
+}
+
+h1 {
+  color: red;
+}
+
+ul h1 {
+  text-decoration: underline;
+}
+
+.list {
+  background-color: lightblue;
+}
+
+.list > .great {
+  color: green;
+}
+
+li > h1 {
+  font-size: 4em;
+}
+
+.list.second {
+  background: yellow;
+}
+
+/* try to avoid */
+.list li:nth-child(2) {
+
+}
+
+.great, .wahoo {
+  text-shadow: 0 0 5px red;
+}

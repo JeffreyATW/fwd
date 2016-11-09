@@ -1,0 +1,46 @@
+body {
+  background-color: skyblue;
+  margin: 0 auto;
+  width: 1000px;
+}
+
+header {
+  background-color: cyan;
+  display: flex;
+}
+
+.callout {
+  width: 200px;
+}
+
+.callout--first {
+  order: 1;
+}
+
+h1 {
+  flex-grow: 1;
+  order: 2;
+  text-align: center;
+}
+
+.callout--second {
+  order: 3;
+}
+
+.container {
+  background-color: orange;
+  display: flex;
+}
+
+aside {
+  width: 200px;
+}
+
+main {
+  background-color: white;
+  width: 600px;
+}
+
+.intro {
+  display: flex;
+}

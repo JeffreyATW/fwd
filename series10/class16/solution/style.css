@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+}
+
+.box-one,
+.box-two {
+  color: white;
+  height: 200px;
+  width: 200px;
+}
+
+.box-one {
+  background: red;
+}
+
+.box-two {
+  background: blue;
+  left: 20px;
+  position: absolute;
+  top: 20px;
+}

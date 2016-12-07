@@ -1,0 +1,14 @@
+.outer, .inner {
+  height: 100px;
+  width: 100px;
+}
+
+.outer {
+  float: right;
+}
+
+.inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}

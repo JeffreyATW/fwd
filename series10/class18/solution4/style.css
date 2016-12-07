@@ -1,0 +1,17 @@
+.outer:before,
+.outer:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.outer:after {
+  clear: both;
+}
+
+.outer {
+  *zoom: 1;
+}
+
+.inner {
+  float: right;
+}

@@ -1,0 +1,111 @@
+$navy: #002344;
+$teal: #005275;
+$skyblue: #77A2B5;
+$white: #fff;
+
+$normal-font-size: 16px;
+$smaller-font-size: 14px;
+
+body {
+  color: $navy;
+  font-family: sans-serif;
+  font-size: $normal-font-size;
+  margin: 0;
+}
+
+a {
+  color: $skyblue;
+  text-decoration: none;
+}
+
+.container {
+  padding: 0 12px;
+}
+
+.header {
+  background: $teal;
+  font-size: $smaller-font-size;
+  padding: .5em 0;
+
+  &__heading {
+    margin: 0;
+    text-align: center;
+  }
+
+  &__login {
+    display: flex;
+    justify-content: center;
+    margin-top: .5em;
+
+    a {
+      border-left: 1px solid $navy;
+      margin-left: .35em;
+      padding-left: .35em;
+    }
+  }
+}
+
+.nav {
+  background: $navy;
+  font-size: $smaller-font-size;
+
+  &__list {
+    margin: 0;
+    padding: 0;
+  }
+    
+  a {
+    display: block;
+    line-height: 36px;
+    text-align: center;
+  }
+}
+
+.hero {
+  background: $skyblue url('images/hero.jpg') 50% no-repeat;
+  font-size: 30px;
+  text-align: center;
+
+  &__content {
+    background: rgba(0, 0, 0, .25);
+    padding-bottom: .5em;
+  }
+
+  &__heading {
+    color: $white;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: .5em 0;
+    text-shadow: 0 0 20px #000;
+
+    strong {
+      display: block;
+    }
+  }
+
+  &__cta {
+    background: linear-gradient(to bottom, $skyblue, $teal);
+    border: 1px solid rgba(0, 0, 0, .5);
+    border-radius: 10px;
+    box-shadow: inset 1px 1px 1px rgba(255, 255, 255, .5),
+                inset -1px -1px 1px rgba(0, 0, 0, .5);
+    color: $white;
+    display: inline-block;
+    padding: 10px 20px;
+
+    &:active {
+      box-shadow: 1px 1px 1px rgba(255, 255, 255, .5),
+                  -1px -1px 1px rgba(0, 0, 0, .5);      
+    }
+  }
+}
+
+.details {
+  background: #ECE2C6;
+}
+
+.footer {
+  background: $navy;
+  font-size: $smaller-font-size;
+}

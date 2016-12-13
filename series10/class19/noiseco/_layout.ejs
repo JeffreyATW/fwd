@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NoiseCo</title>
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="header__heading">
+          <img src="images/logo.png" alt="NoiseCo">
+        </h1>
+        <div class="header__login">
+          Welcome, Jeffrey
+          <a href="#">My Account</a>
+          <a href="#">Log Out</a>
+        </div>
+      </div>
+    </header>
+    <nav class="nav">
+      <div class="container">
+        <ul class="nav__list">
+          <li>
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Clients</a>
+          </li>
+          <li>
+            <a href="#">Testimonials</a>
+          </li>
+          <li>
+            <a href="#">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <%- yield %>
+    <footer class="footer">
+      <div class="container">
+        <h2 class="footer__heading">
+          <img src="images/logo_small.png" alt="NoiseCo">
+        </h2>
+        <nav class="footer__nav">
+          <ul class="footer__list">
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About</a>
+            </li>
+            <li>
+              <a href="#">Clients</a>
+            </li>
+            <li>
+              <a href="#">Testimonials</a>
+            </li>
+            <li>
+              <a href="#">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <small class="footer__copyright">&copy; 2016 NoiseCo. All rights reversed.</small>
+      </div>
+    </footer>
+  </body>
+</html>
